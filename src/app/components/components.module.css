@@ -115,15 +115,40 @@
 .aboutSection {
   padding: 100px 20px;
   background-color: var(--color-cream);
-  text-align: center;
+}
+
+.aboutContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.aboutImageContainer {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #ddd;
+  aspect-ratio: 4 / 3;
+}
+
+.aboutImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.aboutContent {
+  text-align: left;
 }
 
 .aboutText {
-  max-width: 800px;
-  margin: 0 auto;
   font-size: 1.2rem;
   line-height: 1.6;
   color: var(--color-text);
+  margin-top: 20px;
 }
 
 /* Method Section */
@@ -402,7 +427,7 @@
   .vslTitle, .methodHighlight, .diagnosticTitle { font-size: 2rem; }
   .checkoutPrice { font-size: 3rem; }
   
-  .bioContainer {
+  .bioContainer, .aboutContainer {
     grid-template-columns: 1fr;
     gap: 30px;
   }

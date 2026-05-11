@@ -31,7 +31,7 @@ export default function Hero() {
           22 de Agosto | 13h às 20h | Lounge Yázigi
         </h2>
         
-        <a href="#checkout" className={styles.ctaButton}>
+        <a href="https://forms.gle/ZCgALe3oR6pNRsSA9" target="_blank" rel="noopener noreferrer" className={styles.ctaButton}>
           QUERO MEU LUGAR NA ALJAVA
         </a>
       </div>

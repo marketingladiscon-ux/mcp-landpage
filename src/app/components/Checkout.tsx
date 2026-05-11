@@ -20,9 +20,9 @@ export default function Checkout() {
           Valor promocional de lançamento.
         </p>
         
-        <button className={styles.ctaButton} style={{ width: '100%' }}>
+        <a href="https://forms.gle/ZCgALe3oR6pNRsSA9" target="_blank" rel="noopener noreferrer" className={styles.ctaButton} style={{ width: '100%', display: 'block' }}>
           GARANTIR MINHA VAGA AGORA
-        </button>
+        </a>
       </div>
     </section>
   );

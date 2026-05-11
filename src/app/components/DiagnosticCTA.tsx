@@ -12,7 +12,7 @@ export default function DiagnosticCTA() {
       </p>
       
       <a 
-        href="https://mcp-diagnostico.vercel.app" 
+        href="https://maternidade-com-proposito.vercel.app/#" 
         target="_blank" 
         rel="noopener noreferrer"
         className={styles.ctaButton}
