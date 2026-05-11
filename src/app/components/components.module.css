@@ -166,7 +166,7 @@
 /* Diagnostic CTA */
 .diagnosticSection {
   padding: 100px 20px;
-  background-color: var(--color-white);
+  background-color: var(--color-cream);
   text-align: center;
 }
 
@@ -184,48 +184,153 @@
 /* Testimonials Section */
 .testimonialsSection {
   padding: 100px 20px;
-  background-color: var(--color-cream);
+  background-color: var(--color-white); /* Fundo branco para depoimentos */
   text-align: center;
 }
 
 .carouselContainer {
-  max-width: 800px;
-  margin: 40px auto 0;
+  max-width: 1200px;
+  margin: 60px auto 0;
   position: relative;
   overflow: hidden;
-  border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-  aspect-ratio: 16 / 9;
-  background-color: #ddd;
 }
 
-.carouselImage {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
+.carouselTrack {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
 }
 
-.carouselImageActive {
-  opacity: 1;
+.testimonialCard {
+  flex: 0 0 calc(33.333% - 20px);
+  margin: 0 10px;
+  background-color: var(--color-cream);
+  padding: 40px 30px;
+  border-radius: 8px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.stars {
+  color: var(--color-gold);
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.testimonialText {
+  color: var(--color-text);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  font-style: italic;
+  margin-bottom: 30px;
+  flex-grow: 1;
+}
+
+.testimonialAuthor {
+  display: flex;
+  align-items: center;
+}
+
+.authorAvatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: var(--color-olive);
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-white);
+  font-weight: bold;
+}
+
+.authorName {
+  font-weight: bold;
+  color: var(--color-olive);
+  font-size: 1.1rem;
+}
+
+.authorRole {
+  color: #666;
+  font-size: 0.9rem;
 }
 
 /* Bio Section */
 .bioSection {
   padding: 100px 20px;
-  background-color: var(--color-white);
-  text-align: center;
+  background-color: var(--color-cream);
+}
+
+.bioContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.bioImageContainer {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: var(--color-olive);
+  aspect-ratio: 4 / 5;
+}
+
+.bioImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.9;
 }
 
 .bioContent {
-  max-width: 800px;
-  margin: 0 auto;
+  text-align: left;
+}
+
+.bioOverline {
+  color: var(--color-gold);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.bioTitle {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 40px;
+}
+
+.bioQuote {
+  font-style: italic;
+  color: var(--color-olive);
+  margin-bottom: 20px;
   font-size: 1.1rem;
   line-height: 1.6;
+  border-left: 3px solid var(--color-gold);
+  padding-left: 15px;
+}
+
+.bioSignature {
+  margin-top: 50px;
+}
+
+.bioName {
+  font-family: var(--font-cinzel), serif;
+  font-size: 1.5rem;
+  color: var(--color-olive);
+  font-weight: bold;
+}
+
+.bioRole {
+  color: #666;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 /* Checkout Section */
@@ -296,4 +401,13 @@
   .heroLogo { max-width: 120px; }
   .vslTitle, .methodHighlight, .diagnosticTitle { font-size: 2rem; }
   .checkoutPrice { font-size: 3rem; }
+  
+  .bioContainer {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .testimonialCard {
+    flex: 0 0 calc(100% - 20px);
+  }
 }
