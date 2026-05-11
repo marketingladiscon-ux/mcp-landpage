@@ -1,27 +1,24 @@
 import React from 'react';
-import Image from 'next/image';
 import styles from './components.module.css';
 
 export default function Hero() {
   return (
     <section className={styles.hero}>
-      {/* Imagem de Fundo (definida no CSS) */}
-      
       {/* Logo */}
       <img 
-        src="/MCP-Agosto/logo-mcp-ouro.png" 
+        src="/logo-mcp-ouro.png" 
         alt="Maternidade com Propósito" 
         className={styles.heroLogo} 
       />
 
       {/* Elementos Decorativos */}
       <img 
-        src="/MCP-Agosto/elemento-flecha-ouro.png" 
+        src="/elemento-flecha-ouro.png" 
         alt="" 
         className={styles.heroLeaves}
       />
       <img 
-        src="/MCP-Agosto/sonja-chacon-recorte.png" 
+        src="/sonja-chacon-recorte.png" 
         alt="Sonja Chacon" 
         className={styles.heroSonja}
       />

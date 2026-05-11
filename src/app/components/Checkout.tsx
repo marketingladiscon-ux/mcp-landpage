@@ -4,21 +4,24 @@ import styles from './components.module.css';
 export default function Checkout() {
   return (
     <section id="checkout" className={styles.checkoutSection}>
+      <h2 className={`gold-gradient-text`} style={{ fontSize: '3rem', textAlign: 'center' }}>
+        Sua vaga na próxima Aljava
+      </h2>
+      <p style={{ fontSize: '1.2rem', marginTop: '10px' }}>
+        Imersão Presencial - 22 de Agosto de 2026
+      </p>
+
       <div className={styles.checkoutCard}>
-        <h2 style={{ color: 'var(--color-olive)', fontSize: '2rem' }}>
-          Garantir Meu Lugar
-        </h2>
-        
         <div className={`${styles.checkoutPrice} gold-gradient-text`}>
           R$ 127,90
         </div>
         
         <p className={styles.checkoutScarcity}>
-          Valor promocional para as primeiras inscritas da lista.
+          Valor promocional de lançamento.
         </p>
         
         <button className={styles.ctaButton} style={{ width: '100%' }}>
-          COMPRAR AGORA
+          GARANTIR MINHA VAGA AGORA
         </button>
       </div>
     </section>

@@ -24,7 +24,16 @@ body {
   font-family: var(--font-inter), sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2 {
+  font-family: var(--font-cinzel), serif;
+  background: linear-gradient(45deg, #b8860b, #f3e5ab);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent; /* Fallback */
+}
+
+h3, h4, h5, h6 {
   font-family: var(--font-cinzel), serif;
 }
 
