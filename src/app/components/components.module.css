@@ -1,0 +1,214 @@
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url('/MCP-Agosto/mcp-bg-verde-texturizado.jpg');
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  padding: 120px 20px 40px;
+  text-align: center;
+}
+
+.heroLogo {
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 180px;
+  height: auto;
+  z-index: 10;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+}
+
+.heroTitle {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.heroSubtitle {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  color: var(--color-cream);
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.heroSonja {
+  position: absolute;
+  bottom: 0;
+  right: 5%;
+  height: 80vh;
+  object-fit: contain;
+  z-index: 1;
+}
+
+.heroLeaves {
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  width: 200px;
+  opacity: 0.7;
+  z-index: 1;
+}
+
+.ctaButton {
+  background-color: var(--color-gold);
+  color: var(--color-black);
+  padding: 18px 40px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  display: inline-block;
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+}
+
+.ctaButton:hover {
+  background-color: var(--color-gold-light);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(212, 175, 55, 0.5);
+}
+
+/* VSL Section */
+.vslSection {
+  padding: 100px 20px;
+  background-color: var(--color-white);
+  text-align: center;
+}
+
+.vslTitle {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.vslContainer {
+  max-width: 800px;
+  margin: 0 auto;
+  border: 2px solid var(--color-gold);
+  padding: 10px;
+  border-radius: 8px;
+  background-color: var(--color-black);
+  aspect-ratio: 16 / 9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.vslPlaceholderText {
+  color: var(--color-white);
+  opacity: 0.5;
+}
+
+/* Method Section */
+.methodSection {
+  padding: 100px 20px;
+  background-color: var(--color-cream);
+  text-align: center;
+}
+
+.methodHighlight {
+  font-size: 2.5rem;
+  margin-bottom: 60px;
+}
+
+.methodGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.methodCard {
+  background-color: var(--color-white);
+  padding: 40px 20px;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  border-bottom: 3px solid var(--color-gold);
+  transition: transform 0.3s ease;
+}
+
+.methodCard:hover {
+  transform: translateY(-5px);
+}
+
+.methodCardTitle {
+  color: var(--color-olive);
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+/* Diagnostic CTA */
+.diagnosticSection {
+  padding: 100px 20px;
+  background-color: var(--color-olive);
+  text-align: center;
+  color: var(--color-white);
+}
+
+.diagnosticTitle {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: var(--color-cream);
+}
+
+/* Checkout Section */
+.checkoutSection {
+  padding: 100px 20px;
+  background-color: var(--color-white);
+  display: flex;
+  justify-content: center;
+}
+
+.checkoutCard {
+  background-color: var(--color-cream);
+  padding: 60px 40px;
+  border-radius: 12px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+  border: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.checkoutPrice {
+  font-size: 4.5rem;
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+.checkoutScarcity {
+  color: var(--color-olive);
+  font-weight: 500;
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: 2rem;
+  }
+  .heroSonja {
+    height: 50vh;
+    opacity: 0.4;
+  }
+  .heroLogo {
+    max-width: 120px;
+  }
+  .vslTitle, .methodHighlight, .diagnosticTitle {
+    font-size: 2rem;
+  }
+}
